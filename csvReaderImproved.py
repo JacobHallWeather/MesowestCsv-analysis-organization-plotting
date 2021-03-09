@@ -255,8 +255,9 @@ for loop in range(100):
             plt.yticks(y_ticks)
             
             Time = ['\n'.join(wrap(l, 12)) for l in Time]
-            plt.plot(TimePlot,TempPlot)
-            plt.plot(TimePlot,DewpointPlot)
+            plt.plot(TimePlot,TempPlot, "-r", label="Temp")
+            plt.plot(TimePlot,DewpointPlot, "-b", label="Dew point")
+            plt.legend(loc='upper left')
             plt.xlabel('Time')
             plt.ylabel('Temp')
             plt.show()
