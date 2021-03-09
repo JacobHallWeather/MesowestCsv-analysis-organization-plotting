@@ -4,7 +4,7 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 from textwrap import wrap
-from scipy.interpolate import make_interp_spline, BSpline
+
 def convert_float(val): #convert string to float for float lists, return '' if false
     try:
         return float(val)
