@@ -124,7 +124,7 @@ for line in file:
     length+=1
     #this wonderful csv reader splits by ',' and prevents weathersum of "rain,mist" to be split
     for linesplit in csv.reader([line]):
-        linesplit = linesplit
+        continue
     
     Temp.append(convert_float(linesplit[tempIndex]))
     Time.append(linesplit[timeIndex])
