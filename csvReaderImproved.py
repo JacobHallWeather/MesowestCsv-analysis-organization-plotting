@@ -122,7 +122,7 @@ length = 0
 #Converts the column data into floats and then appends it into the proper lists. 
 for line in file:
     length+=1
-    #this wonderful csv reader splits by ',' and prevents weathersum of "rain,mist" to be split
+    #this wonderful csv reader splits by ',' and prevents weathersum of "rain,mist" to be split. It does not split by comma if within quotes
     for linesplit in csv.reader([line]):
         continue
     
