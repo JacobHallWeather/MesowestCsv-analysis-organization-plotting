@@ -4,6 +4,18 @@ Created on Tue Mar 6 11:13:43 2021
 
 #Station_ID,Date_Time,altimeter_set_1,air_temp_set_1,dew_point_temperature_set_1,relative_humidity_set_1,wind_speed_set_1,wind_direction_set_1,wind_gust_set_1,sea_level_pressure_set_1,weather_cond_code_s    et_1,cloud_layer_3_code_set_1,pressure_tendency_set_1,precip_accum_one_hour_set_1,precip_accum_three_hour_set_1,cloud_layer_1_code_set_1,cloud_layer_2_code_set_1,precip_accum_six_hour_set_1,precip_accum    _24_hour_set_1,visibility_set_1,metar_remark_set_1,metar_set_1,air_temp_high_6_hour_set_1,air_temp_low_6_hour_set_1,peak_wind_speed_set_1,ceiling_set_1,pressure_change_code_set_1,air_temp_high_24_hour_s    et_1,air_temp_low_24_hour_set_1,peak_wind_direction_set_1,dew_point_temperature_set_1d,cloud_layer_1_set_1d,cloud_layer_3_set_1d,cloud_layer_2_set_1d,wind_chill_set_1d,weather_summary_set_1d,wind_cardin    al_direction_set_1d,pressure_set_1d,sea_level_pressure_set_1d,heat_index_set_1d,weather_condition_set_1di')
 #,,INHG,Fahrenheit,Fahrenheit,%,Miles/hour,Degrees,Miles/hour,INHG,code,code,code,Inches,Inches,code,code,Inches,Inches,Statute miles,text,text,Fahrenheit,Fahrenheit,Miles/hour,Feet,code,Fahrenheit,Fahrenheit,Degrees,Fahrenheit,code,code,code,Fahrenheit,code,code,INHG,INHG,Fahrenheit,code
+
+#This code is still in progress. This code takes csv files that one has downloaded from MesoWest and prints it in an organized and simplified format. This will be more developed for plotting options.
+#Goals: 
+#Include station info displayed in the plot. 
+#Smooth out the plot. Include more data. Interpolation/extrapolation for blank data option. 
+#mark interpolated/extrapolated values 
+#Allow user to choose what data is to be graphed. 
+#Allow user to choose what timeframe is to be graphed.
+
+#Large goal:
+#Possible usage of MesoWest API to choose stations.
+
 import csv
 import matplotlib.pyplot as plt
 import numpy as np
